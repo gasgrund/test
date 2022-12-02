@@ -10,5 +10,8 @@
     "type": "git",
     "url": "git+https://github.com/gasgrund/test.git"
   },
-  "homepage": "https://github.com/gasgrund/test#readme"
+  "homepage": "https://github.com/gasgrund/test#readme",
+  "dependencies": {
+    "jest": "^29.3.1"
+  }
 }
