@@ -1,3 +1,9 @@
+select * from people;
+select '' as '';
+
+select * from phones;
+select '' as '';
+
 select concat_ws(" ", people.first_name, people.last_name) as name,
        group_concat(phones.number)                         as numbers
 from people

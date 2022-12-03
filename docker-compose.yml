@@ -1,0 +1,11 @@
+services:
+  database:
+    image: 'mariadb:latest'
+    container_name: 'test_database'
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: test
+    ports:
+      - '33306:3306'
+    volumes:
+      - ./scripts/mariadb:/docker-entrypoint-initdb.d/

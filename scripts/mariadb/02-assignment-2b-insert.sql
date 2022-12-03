@@ -1,10 +1,3 @@
-create table people
-(
-    id         integer auto_increment primary key,
-    first_name varchar(255),
-    last_name  varchar(255)
-);
-
 insert into people (first_name, last_name)
 values ("John", "Smith"),
        ("Mary", "Jones"),
@@ -12,13 +5,6 @@ values ("John", "Smith"),
        ("Rami", "Pitkäniemi"),
        ("Anna", "Kråkström")
 ;
-
-create table phones
-(
-    id      integer auto_increment primary key,
-    user_id integer,
-    number  varchar(255)
-);
 
 insert into phones (user_id, number)
 values (2, "+1 213 621 0002"),
